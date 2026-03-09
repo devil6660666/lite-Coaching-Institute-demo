@@ -1,0 +1,32 @@
+/* Custom styles for the business website */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Additional customizations if needed */
+.container {
+    max-width: 1200px;
+}
+
+/* Hover effects are handled by Tailwind classes */
+
+/* Mobile menu animation */
+#mobile-menu {
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* Ensure nav doesn't overlap content */
+#home {
+    padding-top: 80px; /* Adjust based on nav height */
+}
+
+/* For smaller screens, adjust hero text */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 3rem;
+    }
+    #home p {
+        font-size: 1.25rem;
+    }
+}

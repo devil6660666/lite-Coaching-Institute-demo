@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Coaching Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">Elite Coaching Institute</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+                <a href="#services" class="text-gray-700 hover:text-blue-600">Services</a>
+                <a href="#gallery" class="text-gray-700 hover:text-blue-600">Gallery</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-700" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="md:hidden bg-white shadow-md hidden" id="mobile-menu">
+            <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About</a>
+            <a href="#services" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Services</a>
+            <a href="#gallery" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Gallery</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Demo Notice Banner -->
+    <div class="bg-yellow-400 text-center py-2 text-sm font-semibold text-gray-800 mt-16">
+        This is a demo website created for local businesses. Contact to get your own website.
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white">
+        <div class="text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Elite Coaching Institute</h1>
+            <p class="text-xl md:text-2xl mb-8">Empowering Students for a Brighter Future</p>
+            <div class="space-x-4">
+                <a href="tel:+919660612803" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Call Now</a>
+                <a href="https://wa.me/919660612803" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">About Us</h2>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                At Elite Coaching Institute, we are dedicated to providing top-notch education and guidance to students preparing for board exams and competitive entrance tests. Our experienced faculty and proven methodologies ensure success.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <i class="fas fa-graduation-cap text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Expert Faculty</h3>
+                    <p class="text-gray-600">Learn from seasoned educators with years of experience.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <i class="fas fa-book text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Comprehensive Curriculum</h3>
+                    <p class="text-gray-600">Cover all topics with in-depth study materials.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <i class="fas fa-trophy text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Proven Results</h3>
+                    <p class="text-gray-600">High success rates in board and competitive exams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">Our Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-clipboard-list text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Board Exam Coaching</h3>
+                    <p class="text-gray-600">Comprehensive preparation for class 10th and 12th board exams with focus on all subjects.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-brain text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">JEE/NEET Preparation</h3>
+                    <p class="text-gray-600">Intensive coaching for engineering and medical entrance exams with mock tests.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-users text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Group Classes</h3>
+                    <p class="text-gray-600">Interactive group sessions for better learning and peer discussions.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-user-graduate text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Personalized Tutoring</h3>
+                    <p class="text-gray-600">One-on-one sessions tailored to individual student needs.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-chart-line text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Test Series</h3>
+                    <p class="text-gray-600">Regular mock tests and performance analysis to track progress.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-lightbulb text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Career Counseling</h3>
+                    <p class="text-gray-600">Guidance on career choices and exam strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <img src="Classroom.webp" alt="Classroom" loading="lazy" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <img src="Study Session.webp" alt="Study Session" loading="lazy" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <img src="Mock Test.webp" alt="Mock Test" loading="lazy" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <img src="Faculty Interaction.webp" alt="Faculty Interaction" loading="lazy" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <img src="Library.webp" alt="Library" loading="lazy" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <img src="Success Stories.webp" alt="Success Stories" loading="lazy" class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Get in Touch</h3>
+                    <p class="text-gray-600 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>123 Education Street, Knowledge City, State 12345</p>
+                    <p class="text-gray-600 mb-2"><i class="fas fa-phone mr-2"></i>+1 (234) 567-8900</p>
+                    <p class="text-gray-600 mb-2"><i class="fas fa-envelope mr-2"></i>info@elitecoaching.com</p>
+                    <p class="text-gray-600"><i class="fas fa-clock mr-2"></i>Mon-Fri: 9AM-6PM, Sat: 9AM-2PM</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2412648713845!2d-73.98785368459375!3d40.75058097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1633020000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Elite Coaching Institute</h3>
+                    <p class="text-gray-400">Empowering students for academic excellence and bright futures.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2023 Elite Coaching Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919660612803" class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
